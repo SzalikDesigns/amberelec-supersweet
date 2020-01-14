@@ -2,11 +2,15 @@
 theme name:     Pacman
 creator:		Dwayne Hurst (aka Hursty)
 version         1.0
+
+Tema editado por: José Adriano, para atender as necessidades do sistema EmuElec, mudança no visual,fonte, suporte a grid e meunu color adicionados.01/12/2019. (drixplm)
 -->
 
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
    <formatVersion>4</formatVersion>
+   <include>./_inc/icons/menuicons.xml</include>
+	<include>./_inc/menu/menu.xml</include>
 
 <feature supported="carousel">
    <view name="system">
@@ -14,12 +18,14 @@ version         1.0
         <type>horizontal</type>
         <pos>0.0 0.0</pos>
         <size>1 1</size>
-        <logoScale>1.025</logoScale>
+        <logoScale>1.03</logoScale>
          <zIndex>41</zIndex>          
-        <logoSize>0.95 0.95</logoSize>
+        <logoSize>0.80 0.80</logoSize>
         <color>00000000</color>
+	 <scrollSound>./_inc/teste.mp3</scrollSound>
         <maxLogoCount>5</maxLogoCount>
       </carousel>
+	  
       <image name="background" extra="true">
          <origin>0 0</origin>
          <pos>0 0</pos>
@@ -29,42 +35,42 @@ version         1.0
       </image>              
       <text name="systemInfo">
          <zIndex>44</zIndex>       
-         <pos>0.35 0.96</pos>
+         <pos>0.01 0.93</pos>
          <backgroundColor>00000000</backgroundColor>
-         <color>ffffff</color>
-         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
-	     <fontSize>0.015</fontSize>
+         <color>FF8C00</color>
+         <fontPath>./_inc/fonts/Nickson One.otf</fontPath>
+	     <fontSize>0.050</fontSize>
          <zIndex>44</zIndex>	     
-      </text>            
+      </text>  
    </view>
 </feature>
 
    <view name="detailed,video">
       <helpsystem name="help">
-         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
-         <fontSize>0.015</fontSize>      
+         <fontPath>./_inc/fonts/Nickson One.otf</fontPath>
+         <fontSize>0.022</fontSize>      
          <pos>0.015 0.98</pos>      
-         <textColor>ff0000</textColor>
-         <iconColor>ff0000</iconColor>
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff</iconColor>
       </helpsystem>
    </view> 
    <view name="basic">
       <helpsystem name="help">
-         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
-         <fontSize>0.015</fontSize>      
+         <fontPath>./_inc/fonts/Nickson One.otf</fontPath>
+         <fontSize>0.022</fontSize>      
          <pos>0.015 0.98</pos>      
-         <textColor>ff0000</textColor>
-         <iconColor>ff0000</iconColor>
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff</iconColor>
       </helpsystem>
    </view>    
    
    <view name="system">
       <helpsystem name="help">
-         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
-         <fontSize>0.015</fontSize>     
-         <pos>0.015 0.98</pos>      
-         <textColor>ff0000</textColor>
-         <iconColor>ff0000</iconColor>
+         <fontPath>./_inc/fonts/Nickson One.otf</fontPath>
+         <fontSize>0.025</fontSize>     
+         <pos>0.010 0.98</pos>      
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff</iconColor>
       </helpsystem>
    </view>   
 
@@ -76,8 +82,8 @@ version         1.0
          <selectedColor>ff0000</selectedColor>
          <primaryColor>ffffff</primaryColor>
          <secondaryColor>ffffff</secondaryColor>
-         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
-         <fontSize>0.033</fontSize>
+         <fontPath>./_inc/fonts/Nickson One.otf</fontPath>
+         <fontSize>0.040</fontSize>
          <forceUppercase>1</forceUppercase>
          <scrollSound></scrollSound>
          <alignment>left</alignment>
@@ -93,7 +99,7 @@ version         1.0
          <selectedColor>ff0000</selectedColor>
          <primaryColor>ffffff</primaryColor>
          <secondaryColor>ffffff</secondaryColor>
-         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
+         <fontPath>./_inc/fonts/Nickson One.otf</fontPath>
          <fontSize>0.033</fontSize>
          <forceUppercase>1</forceUppercase>
          <scrollSound></scrollSound>
@@ -124,7 +130,7 @@ version         1.0
       </text>
       <text name="md_lbl_rating,md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount,md_lbl_players,md_developer, md_publisher, md_genre, md_playcount, md_lastplayed,md_description,md_players,md_releasedate">
          <color>ffffff</color>
-         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
+         <fontPath>./_inc/fonts/Nickson One.otf</fontPath>
          <fontSize>0.025</fontSize>
       </text>
       <text name="md_lbl_rating">
@@ -216,5 +222,66 @@ version         1.0
          <zIndex>42</zIndex>         
       </image>             
    </view>
+   <view name="grid">
+	<text name="md_genre">
+			<size>0.83 0.19</size>
+			<color>ffffff</color> <origin>0.5 0.5</origin>
+			<pos>0.47 0.820</pos>
+			<fontSize>0.04</fontSize>
+			<fontPath>./_inc/fonts/Nickson One.otf</fontPath>
+			<zIndex>91</zIndex>  
+		</text>
+		
+	<text name="md_description">
+	  	<color>ffffff</color>
+		<fontSize>0.024</fontSize>
+		<fontPath>./_inc/fonts/Nickson One.otf</fontPath>
+		<size>0.20 0.10</size>
+		<pos>0.08 0.860</pos>
+    </text>
+	<text name="md_name">
+			<fontPath>./_inc/fonts/Nickson One.otf</fontPath>
+			<fontSize>0.04</fontSize>
+			<pos>0.355625 0.1</pos>
+			<size>0.6875 0.0248148148148148</size>
+			<alignment>left</alignment>
+			<color>ffffff</color>
+		</text>
+	
+
+	
+	 <helpsystem name="help">
+         <fontPath>./_inc/fonts/Nickson One.otf</fontPath>
+         <fontSize>0.0215</fontSize>      
+         <pos>0.30 0.942</pos>      
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff</iconColor>
+      </helpsystem>
+	
+		<gridtile name="default">
+			<size>0.22875 0.33</size>
+			<backgroundColor>00000000</backgroundColor>
+		</gridtile>
+	
+	 <image name="background" extra="true">
+         <origin>0 0</origin>
+         <path>./_inc/teste.png</path>
+         <pos>0 0</pos>
+         <size>1 1</size>    		<zIndex>8</zIndex>    
+      </image>
+	
+
+         <imagegrid name="gamegrid">
+			<pos>0.04 0.22</pos>
+			<size>1 0.64</size>
+			<margin>-0.055 0.01</margin>
+		</imagegrid>
+	
+	
+	<gridtile name="selected">
+			<size>0.20075 0.40</size>
+			<backgroundColor>808080</backgroundColor>
+		</gridtile>
+</view>
    
 </theme>
